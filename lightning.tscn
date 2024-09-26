@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyajovlvygk2g"]
+
+[ext_resource type="Script" path="res://lightning.gd" id="1_r8030"]
+
+[node name="root" type="Node2D"]
+
+[node name="lightning" type="Node2D" parent="." node_paths=PackedStringArray("target", "lightning")]
+script = ExtResource("1_r8030")
+target = NodePath("Marker2D")
+lightning = NodePath("")
+
+[node name="Marker2D" type="Marker2D" parent="lightning"]
+position = Vector2(248, 110)
